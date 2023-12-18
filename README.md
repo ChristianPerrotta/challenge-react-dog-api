@@ -113,7 +113,7 @@ No diretório do projeto, você pode rodar:
 
 Roda o app em modo de desenvolvimento. Uma janela abrirá automaticamente em seu navegador, ou você pode abrir manualmente em [http://localhost:3000](http://localhost:3000).
 
-A página irá recarregare automaticamente quando você fizer mudanças.
+A página irá recarregar automaticamente quando você fizer mudanças.
 
 ### `npm test`
 
