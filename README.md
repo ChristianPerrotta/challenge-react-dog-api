@@ -19,7 +19,7 @@
 
 Este projeto foi criado como resultado de um desafio proposto pela Oxeanbits, para a carga de desenvolvedor front end. Ele traz o consumo de uma API de cachorros (The Dog API) e lista resultados sobre diversas raças de cães.
 
-Escolha uma raça específica, ou gere uma lista de cães aleaatórios, e confira os resultados:
+Escolha uma raça específica, ou gere uma lista de cães aleatórios, e confira os resultados:
 * Foto com nome da raça
 * Altura
 * Peso
