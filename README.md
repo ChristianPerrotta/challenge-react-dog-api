@@ -1,70 +1,149 @@
-# Getting Started with Create React App
+<a name="readme-top"></a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- PROJECT SHIELDS -->
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-## Available Scripts
+<br />
+<div align="center">
+    <h3 align="center">Let's know some dogs!</h3>
+    <img src="./src/assets/puppy.png" alt="Logo" width="80">
+    <p align="center">
+        Conheça diversas raças de cães, suas características, fotos e se apaixone!
+    </p>
+</div>
 
-In the project directory, you can run:
+## Sobre o Projeto
+
+![Know some dogs Screenshot][project-screenshot]
+
+Este projeto foi criado como resultado de um desafio proposto pela Oxeanbits, para a carga de desenvolvedor front end. Ele traz o consumo de uma API de cachorros (The Dog API) e lista resultados sobre diversas raças de cães.
+
+Escolha uma raça específica, ou gere uma lista de cães aleaatórios, e confira os resultados:
+* Foto com nome da raça
+* Altura
+* Peso
+* Expectativa de vida
+* Temperamento
+
+Adicionalmente, ao clicar sobre a foto de qualquer cachorro, uma nova aba irá se abrir contendo a página da wikipedia (em inglês) sobre aquela raça de cachorro.
+
+<p align="right">(<a href="#readme-top">início ↑</a>)</p>
+
+### Construído com
+
+Este site foi criado com:
+* [![React][React.js]][React-url]
+* [![Kendo][Kendo]][Kendo-url]
+* [![Bootstrap][Bootstrap]][Bootstrap-url]
+* [![Jest][Jest]][Jest-url]
+
+O projeto foi iniciado com [Create React App](https://github.com/facebook/create-react-app).
+
+<p align="right">(<a href="#readme-top">início ↑</a>)</p>
+
+## Iniciando
+
+Para obter uma cópia local e rodar o projeto, siga os passos a seguir.
+
+### Pré-requisitos
+
+É preciso ter a ferramente npm instalada em seu dispositivo. Caso não tenha, instale [Node.js](https://nodejs.org/en), e a ferramenta virá junto com ele.
+
+Para verificar se sua máquina já possui tanto Node.js quando npm instalados, abra o Terminal, ou outra ferramente de linha de comando, e digite:
+
+* Para verificar a versão do node.js:
+```sh
+>node -v
+v19.1.0
+```
+
+* Para verificar a versão do npm:
+```sh
+>npm -v
+8.19.3
+```
+
+Não é preciso que os números das versões sejam exatamente os mesmos mostrados acima. Basta que alguma versão esteja presente.
+
+### Instalação
+
+1. Obtenha uma chave gratuita para a API
+
+O projeto utiliza [The Dog API](https://www.thedogapi.com/), uma API cuja licença precisa ser obtida previamente. Sem uma licença, a API tem retorno muito limitado, o que torna diminui em muito as funcionalidades do site.
+
+Uma chave gratuita de utilização da API pode ser obtida [neste link](https://www.thedogapi.com/signup). Após o registro, você receberá uma chave por email. Ela será utilizada em outro passo abaixo.
+
+2. (Opcional) Obtenha uma licença de teste para o Kendo UI
+
+O projeto utiliza KendoReact, uma biblioteca de componentes gráficos da Progress para React. O projeto pode rodar sem uma licença, mas terá o risco de apresentar marcas d'água sobre seus componentes, além de alertas de falta de licença no console.
+
+Para obter uma licença gratuita de 30 dias, [crie uma conta](https://www.telerik.com/try/kendo-react-ui) na Progress e siga os passos. Após solicitar a chave de teste e logar na conta, você poderá baixar um arquivo chamado kendo-ui-license.txt. Ele será utilizado mais adiante.
+
+3. Faça um clone do repositório
+```sh
+git clone https://github.com/ChristianPerrotta/challenge-react-dog-api.git
+```
+
+4. Com a pasta do projeto aberta, instale os pacotes via npm
+```sh
+npm install
+```
+
+5. Crie um arquivo `.env` na raiz do projeto e inclua sua chave da The Dog API recebia por email anteriormente. É importante que o nome da variável seja exatamente esta, iniciada com `REACT_APP_`. Inclua sua chave sem aspas e sem os sinais de  `[ ]`.
+```sh
+REACT_APP_DOG_API_KEY=[SUA CHAVE AQUI]
+```
+
+6. (Opcional) Ative sua licença teste para o Kendo UI
+
+Caso tenha obtido uma licença teste, você terá um arquivo kendo-ui-license.txt baixado. Copie o arquivo inteiro para a raiz do projeto e, em seguida, rode o seguinte comando no terminal:
+```sh
+npx kendo-ui-license activate
+```
+Por vezes, mesmo que a licença tenha sido ativada, o console pode ainda acusar o contrário. Para casos como este, caso queira, consulte as (orientações do Kendo React)[https://www.telerik.com/kendo-react-ui/components/my-license/].
+
+<p align="right">(<a href="#readme-top">início ↑</a>)</p>
+
+## Scripts disponíveis
+
+No diretório do projeto, você pode rodar:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Roda o app em modo de desenvolvimento. Uma janela abrirá automaticamente em seu navegador, ou você pode abrir manualmente em [http://localhost:3000](http://localhost:3000).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+A página irá recarregare automaticamente quando você fizer mudanças.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Inicia os testes criados na pasta `/test`, com jester, e ativa seu `watch mode`.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Monta o app para produção na pasta `build`.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<p align="right">(<a href="#readme-top">início ↑</a>)</p>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Contato
 
-### `npm run eject`
+Christian Perrotta - chr.perrotta@gmail.com
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Link do projeto: [https://github.com/ChristianPerrotta/challenge-react-dog-api](https://github.com/ChristianPerrotta/challenge-react-dog-api)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<p align="right">(<a href="#readme-top">início ↑</a>)</p>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<!-- MARKDOWN LINKS & IMAGES -->
+[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
+[license-url]: https://github.com/ChristianPerrotta/challenge-react-dog-api/blob/main/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/christian-perrotta-17422b114/
+[project-screenshot]: src/assets/project-screenshot.png
+[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[React-url]: https://reactjs.org/
+[Kendo]: https://img.shields.io/badge/Kendo_UI-limegreen?style=for-the-badge&logo=progress&logoColor=white
+[Kendo-url]: https://www.telerik.com/kendo-react-ui
+[Bootstrap]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
+[Bootstrap-url]: https://getbootstrap.com
+[Jest]: https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white
+[Jest-url]: https://jestjs.io/pt-BR/
