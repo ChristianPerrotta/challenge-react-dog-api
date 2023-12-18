@@ -101,7 +101,7 @@ Caso tenha obtido uma licença teste, você terá um arquivo kendo-ui-license.tx
 ```sh
 npx kendo-ui-license activate
 ```
-Por vezes, mesmo que a licença tenha sido ativada, o console pode ainda acusar o contrário. Para casos como este, caso queira, consulte as (orientações do Kendo React)[https://www.telerik.com/kendo-react-ui/components/my-license/].
+Por vezes, mesmo que a licença tenha sido ativada, o console pode ainda acusar o contrário. Para casos como este, caso queira, consulte as [orientações do Kendo React](https://www.telerik.com/kendo-react-ui/components/my-license/).
 
 <p align="right">(<a href="#readme-top">início ↑</a>)</p>
 
@@ -135,7 +135,7 @@ Link do projeto: [https://github.com/ChristianPerrotta/challenge-react-dog-api](
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/ChristianPerrotta/challenge-react-dog-api/blob/main/LICENSE.txt
+[license-url]: https://github.com/ChristianPerrotta/challenge-react-dog-api/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/christian-perrotta-17422b114/
 [project-screenshot]: src/assets/project-screenshot.png
